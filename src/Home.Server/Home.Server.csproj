@@ -14,6 +14,10 @@
     <ProjectReference Include="../Home.Client/Home.Client.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <!-- The Mini App build (web/miniapp → wwwroot) is served from the output directory. -->
+    <Content Update="wwwroot\**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
     <InternalsVisibleTo Include="Home.Server.Tests" />
   </ItemGroup>
 </Project>
