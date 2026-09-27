@@ -99,7 +99,7 @@ root.Subcommands.Add(Group("system", "Сервер",
         Console.WriteLine($"devices        {s.Online}/{s.Devices} online" + (s.NewDevices > 0 ? $", {s.NewDevices} new (homectl devices list --new)" : ""));
         Console.WriteLine($"protocol       v{s.ProtocolMajor}.{s.ProtocolMinor}, device port {s.DevicePort}");
         Console.WriteLine($"public url     {s.PublicUrl ?? "-"}");
-        Console.WriteLine($"telegram bot   {(s.BotConfigured ? "@" + s.BotUsername : "not configured")}");
+        Console.WriteLine($"telegram bot   {(!s.BotConfigured ? "not configured" : s.BotUsername != null ? "@" + s.BotUsername : "configured, not connected (check the token / internet)")}");
         Console.WriteLine($"database       {Fmt.Bytes(s.DbSize)}, disk free {Fmt.Bytes(s.DiskFree)}");
         return 0;
     }),
