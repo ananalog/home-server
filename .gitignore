@@ -5,5 +5,10 @@ obj/
 .idea/
 node_modules/
 dist/
-src/Home.Server/wwwroot/
+web/miniapp/.vite/
 *.db
+*.db-shm
+*.db-wal
+src/Home.Server/wwwroot/
+src/Home.Server/design.db*
+TestResults/

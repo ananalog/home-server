@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/external/" />
+  <Folder Name="/external/home-protocol/" />
+  <Folder Name="/external/home-protocol/csharp/">
+    <Project Path="external/home-protocol/csharp/Home.Protocol/Home.Protocol.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Home.Cli/Home.Cli.csproj" />
+    <Project Path="src/Home.Client/Home.Client.csproj" />
+    <Project Path="src/Home.Server/Home.Server.csproj" />
+    <Project Path="src/Home.Simulator/Home.Simulator.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Home.Server.Tests/Home.Server.Tests.csproj" />
+  </Folder>
+</Solution>

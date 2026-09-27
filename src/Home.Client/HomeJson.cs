@@ -1,0 +1,51 @@
+using System.Text.Json.Serialization;
+
+namespace Home.Client;
+
+[JsonSourceGenerationOptions(
+    PropertyNamingPolicy = JsonKnownNamingPolicy.CamelCase,
+    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+    PropertyNameCaseInsensitive = true,
+    WriteIndented = false)]
+[JsonSerializable(typeof(DeviceDto))]
+[JsonSerializable(typeof(List<DeviceDto>))]
+[JsonSerializable(typeof(DeviceUpdateRequest))]
+[JsonSerializable(typeof(SetValueRequest))]
+[JsonSerializable(typeof(InvokeRequest))]
+[JsonSerializable(typeof(InvokeResponse))]
+[JsonSerializable(typeof(FactoryResetRequest))]
+[JsonSerializable(typeof(IdentifyRequest))]
+[JsonSerializable(typeof(NetworkDto))]
+[JsonSerializable(typeof(NetStatusDto))]
+[JsonSerializable(typeof(DeviceConfigDto))]
+[JsonSerializable(typeof(HistoryDto))]
+[JsonSerializable(typeof(RoomDto))]
+[JsonSerializable(typeof(List<RoomDto>))]
+[JsonSerializable(typeof(UserDto))]
+[JsonSerializable(typeof(List<UserDto>))]
+[JsonSerializable(typeof(UserUpsertRequest))]
+[JsonSerializable(typeof(AccessRequestDto))]
+[JsonSerializable(typeof(List<AccessRequestDto>))]
+[JsonSerializable(typeof(TokenDto))]
+[JsonSerializable(typeof(List<TokenDto>))]
+[JsonSerializable(typeof(TokenCreateRequest))]
+[JsonSerializable(typeof(TokenCreatedDto))]
+[JsonSerializable(typeof(FirmwareDto))]
+[JsonSerializable(typeof(List<FirmwareDto>))]
+[JsonSerializable(typeof(OtaJobDto))]
+[JsonSerializable(typeof(List<OtaJobDto>))]
+[JsonSerializable(typeof(OtaJobRequest))]
+[JsonSerializable(typeof(EventDto))]
+[JsonSerializable(typeof(List<EventDto>))]
+[JsonSerializable(typeof(LogLineDto))]
+[JsonSerializable(typeof(List<LogLineDto>))]
+[JsonSerializable(typeof(SystemDto))]
+[JsonSerializable(typeof(TelegramAuthRequest))]
+[JsonSerializable(typeof(AuthResponse))]
+[JsonSerializable(typeof(MeDto))]
+[JsonSerializable(typeof(ErrorDto))]
+[JsonSerializable(typeof(ValuesEvent))]
+[JsonSerializable(typeof(OnlineEvent))]
+[JsonSerializable(typeof(LogEvent))]
+[JsonSerializable(typeof(ClientConfig))]
+public sealed partial class HomeJson : JsonSerializerContext;

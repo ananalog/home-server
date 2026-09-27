@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>home-sim</AssemblyName>
+    <RootNamespace>Home.Simulator</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../external/home-protocol/csharp/Home.Protocol/Home.Protocol.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>home-server</AssemblyName>
+    <RootNamespace>Home.Server</RootNamespace>
+    <UserSecretsId>home-server</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.12" PrivateAssets="all" />
+    <PackageReference Include="Makaretu.Dns.Multicast.New" Version="0.38.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../external/home-protocol/csharp/Home.Protocol/Home.Protocol.csproj" />
+    <ProjectReference Include="../Home.Client/Home.Client.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Home.Server.Tests" />
+  </ItemGroup>
+</Project>
